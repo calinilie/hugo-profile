@@ -31,6 +31,15 @@
     color: var(--primary-color) !important;
 }
 
+#single .page-content img.full-width {
+    max-width: 100%;
+}
+
+
+#single .page-content img.half-width {
+    max-width: 50%;
+}
+
 #single .page-content a::after {
     content: "";
     display: block;
@@ -38,11 +47,7 @@
     height: 2px;
     bottom: 0.37em;
     background-color: var(--primary-color);
-    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
     opacity: 0.5;
-}
-
-#single .page-content a:hover::after, #single .page-content a:focus::after, #single .page-content a:active::after {
     width: 100%;
 }
 
